@@ -1,0 +1,58 @@
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+
+
+int main()
+
+{
+
+  int age;
+
+  char gender;
+
+  string name;
+
+  cout << "enter your name " << endl;
+
+  cin>>name;
+
+  cout << "enter your age " << endl;
+
+  cin>>age;
+
+  cout << "enter your gender (m,f) "<< endl;
+
+  cin>>gender;
+
+
+
+  if(age>18){
+
+    cout<<"hurre!you are an adult and you can definitely vote\n";
+
+    if(gender=='m'){
+
+      cout<<"MR. "<<name<<" is now eligible"<<endl;
+
+    }else{
+
+    cout<<"MRS. "<<name<<" is now eligible"<<endl;
+
+    }
+
+
+
+  }else{
+
+  cout<<"sorry, you are not eligible\n";
+
+  }
+
+  return 0;
+
+}
+
