@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int nextPrime(int);
+int isPrime(int);
+int main(){
+int x,i;
+cout<<"enter a no.: ";
+cin>>x;
+for(i=2;i<(x-i);i=nextPrime(i)){
+   if(isPrime(x-i))
+       cout<<i<<"+"<<(x-i)<<"="<<x;
+  }
+}
+
+int nextPrime(int n){
+do
+    n++;
+while(!isPrime(n));
+return n;
+}
+
+int isPrime(int n){
+int i;
+for(int i=2;i<n;i++){
+    if(n%i==0)
+        return(0);
+    return 1;
+}
+}
