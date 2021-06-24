@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+int arr[5];
+cout<<"enter elements for the array: \n";
+
+for(int i=0;i<5;i++)
+    cin>>arr[i];
+
+cout<<"you have entered the following elements in the array :\n";
+
+for(int i=0;i<5;i++)
+    cout<<*(arr+i)<<endl; //we derefrenced arr because value of an array is the address of the first element of the array.
+
+return 0;
+}
